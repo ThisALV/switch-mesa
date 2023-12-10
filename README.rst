@@ -1,6 +1,14 @@
 `Mesa <https://mesa3d.org>`_ - The 3D Graphics Library
 ======================================================
 
+devkitA64 gdb patch
+-------------------
+
+This fork is required for debugging Nintendo Switch homebrew using devkitA64 gdb,
+as homebrew debugging requires removal of `--functions-sections` and
+`--gc-sections` options which is making homebrew app unable to statically
+link with switch-mesa.
+
 
 Source
 ------
