@@ -342,7 +342,7 @@ nv50_program_translate(struct nv50_program *prog, uint16_t chipset,
       info->bin.source = (void *)prog->pipe.tokens;
       break;
    case PIPE_SHADER_IR_NIR:
-      info->bin.source = (void *)nir_shader_clone(NULL, prog->pipe.ir.nir);
+      //info->bin.source = (void *)nir_shader_clone(NULL, prog->pipe.ir.nir);
       break;
    default:
       assert(!"unsupported IR!");
